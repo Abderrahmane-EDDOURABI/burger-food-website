@@ -1,0 +1,176 @@
+.home__container {
+  padding-block: 3rem 2rem;
+  justify-content: center;
+  row-gap: 3.5rem;
+}
+
+.home__data {
+  position: relative;
+  text-align: center;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  margin-bottom: 1rem;
+}
+
+.home__description {
+  margin-bottom: 2.5rem;
+}
+
+.home__sticker-potatos {
+  width: 40px;
+  rotate: 15deg;
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
+  opacity: 0.5;
+}
+
+.button {
+  display: inline-flex;
+  background-color: var(--first-color);
+  color: var(--title-color);
+  padding: 1rem 1.5rem;
+  font-family: var(--second-font);
+  border-radius: 4rem;
+  transition: box-shadow 0.4s;
+}
+
+.button:hover {
+  box-shadow: 0 8px 24px hsla(22, 100%, 8%, 0.1);
+}
+
+.home__images {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  justify-self: center;
+}
+
+.home__ingredient {
+  width: 60px;
+  filter: var(--shadow-small-img);
+  position: absolute;
+  z-index: 2;
+}
+
+.home__burger,
+.home__dish {
+  filter: var(--shadow-big-img);
+}
+
+.home__burger {
+  width: 280px;
+  z-index: 2;
+}
+
+.home__dish {
+  max-width: initial;
+  width: 450px;
+  position: absolute;
+  bottom: -2rem;
+}
+
+.home__potato-1 {
+  left: -1rem;
+  top: 0.75rem;
+}
+.home__potato-2 {
+  right: -0.75rem;
+  bottom: -2rem;
+  /* rotate: 90deg; */
+}
+
+.home__tomato-1 {
+  width: 40px;
+  top: -1rem;
+  right: 6rem;
+}
+.home__tomato-2 {
+  width: 40px;
+  left: 5.5rem;
+  bottom: -1.5rem;
+}
+.home__lettuce-1 {
+  top: 2.5rem;
+  right: -2rem;
+  transform: scaleX(-1);
+}
+.home__lettuce-2 {
+  left: -2rem;
+  bottom: 1rem;
+}
+
+@media screen AND (max-width: 330px) {
+  .home__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen AND (min-width: 540px) {
+  .home__container {
+    grid-template-columns: 360px;
+    justify-content: center;
+  }
+}
+
+@media screen AND (min-width: 768px) {
+}
+
+@media screen AND (min-width: 1150px) {
+  .home__container {
+    grid-template-columns: 430px 605px;
+    align-items: center;
+    column-gap: 4rem;
+    padding-block: 7rem 4rem;
+  }
+  .home__data {
+    text-align: initial;
+  }
+  .home__description {
+    margin-bottom: 3.5rem;
+    padding-right: 3rem;
+  }
+  .home__sticker-potatos {
+    width: 60px;
+    right: 10rem;
+    bottom: 1rem;
+  }
+
+  .home__burger {
+    width: 490px;
+  }
+  .home__dish {
+    width: 840px;
+    bottom: -4rem;
+  }
+  .home__ingredient {
+    width: 100px;
+  }
+  .home__potato-1 {
+    left: -2rem;
+    top: 1.5rem;
+  }
+  .home__potato-2 {
+    right: -1.5rem;
+    bottom: -3rem;
+  }
+  .home__tomato-1 {
+    left: -2rem;
+    top: 1.5rem;
+  }
+  .home__tomato-2 {
+    width: 70px;
+    left: 9.5rem;
+    bottom: -2.5rem;
+  }
+  .home__lettuce-1 {
+    top: 4rem;
+    right: -3.5rem;
+  }
+  .home__lettuce-2 {
+    left: -3.5rem;
+    bottom: 2rem;
+  }
+}

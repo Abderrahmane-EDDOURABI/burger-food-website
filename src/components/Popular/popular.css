@@ -1,0 +1,103 @@
+.popular__section {
+    background-color: var(--body-color-alt);
+}
+
+.popular__container {
+    padding-block: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem 1.5rem;
+}
+
+.popular__card {
+    position: relative;
+    background-color: var(--first-color);
+    padding: 6rem .75rem 1rem;
+    border: 4px solid var(--container-color);
+    border-radius: 1rem;
+}
+
+.popular__img {
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    right: 0;
+    width: 120px;
+    margin: 0 auto;
+    filter: var(--shadow-small-img);
+    transition: transform .4s;
+}
+
+.popular__title {
+    font-size: var(--normal-font-size);
+    margin-bottom: .75rem;
+}
+
+.popular__price {
+    color: var(--title-color);
+    font-family: var(--second-font);
+    font-size: var(--h2-font-size);
+}
+
+.popular__button {
+    position: absolute;
+    right: .75rem;
+    bottom: 1rem;
+    background-color: var(--second-color);
+    color: var(--white-color);
+    padding: 6px;
+    border-radius: .5rem;
+    font-size: 1.25rem;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.popular__card:hover .popular__img  {
+    transform: translateY(-.5rem);
+}
+
+@media screen AND (min-width: 540px) {
+    .popular__container {
+        grid-template-columns: repeat(2, 160px);
+        justify-content: center;
+    }
+  }
+
+@media screen AND (min-width: 768px) {
+    .popular__container {
+        grid-template-columns: repeat(3, 160px);
+        justify-content: center;
+    }
+  }
+
+  @media screen AND (min-width: 1150px) {
+    .popular__container {
+        grid-template-columns: repeat(3, 250px);
+        gap: 6.5rem 4rem;
+        padding-block: 3rem;
+    }
+
+    .popular__card {
+        padding: 9rem 1.25rem 1.25rem;
+        border-radius: 2rem;
+        border-width: 6px;
+    }
+
+    .popular__img {
+        width: 200px;
+        top: -3.5rem;
+    }
+
+    .popular__title {
+        font-size: var(--h2-font-size);
+    }
+
+    .popular__price {
+        font-size: var(--h1-font-size);
+    }
+
+    .popular__button {
+        font-size: 1.5rem;
+        right: 1.25rem;
+        bottom: 1.25rem;
+    }
+  }
